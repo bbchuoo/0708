@@ -30,6 +30,7 @@ var res = {
     bg_jpg :"res/bg.jpg",
     win : "res/win.wav",
     lose:"res/lose.wav",
+    box_png :"res/box.png",
 
 };
 

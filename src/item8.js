@@ -203,7 +203,17 @@ var item8Layer = cc.Layer.extend({
         // this.sprite.runAction(a5)
 
         //音效
-        cc.audioEngine.playMusic(res.win,false);
+        // cc.audioEngine.playMusic(res.win,false);
+        //
+        // this.sprite.runAction(cc.jumpTo(1,
+        //     cc.p(this.sprite.x,this.sprite.y),250,1));
+
+        var a6 = new cc.ProgressTo(10,100);
+        var timer =  new cc.ProgressTimer(this.sprite);
+        timer.setType(cc.ProgressTimer.TYPE_BAR);
+        timer.setPosition(cc.p(100,cc.winSize.height/2));
+        this.addChild(timer);
+        timer.runAction(a6);
 
     },
 
